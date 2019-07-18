@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Semantics</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/babcbbb930.js"></script>
+</head>
+
+<body>
+
+  <button id="previous" class="previousslide">&lt;&lt;</button>
+  <button id="next" class="nextslide">&gt;&gt;</button>
+
+  <div class="container">
+
+    <section id="slide1" class="slide">
+      <div class="flexcenter">
+        <div class="title">
+          <h1>Semantics</h1>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- slide -->
+
+    <section id="slide2" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>What is semantics?</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <blockquote cite="https://www.dictionary.com/browse/semantics">
+            &ldquo;...refers to the correct interpretation of the meaning of a word or sentence.&rdquo;
+            <p><a href="https://www.dictionary.com/browse/semantics">&sim; dictionary.com &sim;</a></p>
+          </blockquote>
+
+          <h3>HTML<i class="fas fa-long-arrow-alt-right"></i><i class="fas fa-tags"></i></h3>
+          <div class="examples">
+            <code class="ugly">
+              <pre>
+                &lt;h1&gt;Heading&lt;/h1&gt;
+
+                &lt;p&gt;When the browser encounters a h1-tag,
+                  it knows that it&#39;s the
+                  most important header of your website.&lt;/p&gt;
+              </pre>
+            </code>
+          </div>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+    <section id="slide3" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>Why use semantics?</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <ul>
+            <li><span>accessability</span>
+              <i class="fas fa-universal-access"></i></li>
+            <li><span>searchability</span>
+              <i class="fas fa-search"></i></li>
+            <li><span>internationalization</span>
+              <i class="fas fa-globe-americas"></i></li>
+            <li><span>interoperability</span>
+              <i class="fas fa-exchange-alt"></i></li>
+          </ul>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+    <section id="slide4" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>How to apply this on HTML?</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <ul>
+            <li>
+              <p><span>Use HTML-tags correctly.</span></p>
+              <i class="fas fa-tags"></i>
+            </li>
+            <li>
+              <p><span>Separation of <br>content and presentation.</span>Wireframe. Slice. Prepare first then code.</p><i class="fas fa-grip-lines-vertical"></i>
+            </li>
+            <li>
+              <p><span>Use correct document outline.</span> Think of your HTML as a book, that has a logical order in it.</p><i class="fas fa-file-alt"></i>
+            </li>
+            <li>
+              <p><span>Write content first.</span>Then style and change layout with CSS.</p><i class="fas fa-pencil-alt"></i>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+    <section id="slide5" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>Document structure</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <ul>
+            <li>
+              <div><span>Document structure tags.</span>
+                <ol>
+                  <li>header</li>
+                  <li>footer</li>
+                  <li>main</li>
+                  <li>nav</li>
+                  <li>section</li>
+                  <li>aside</li>
+                  <li>article</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <div><span>Textual meaning tags.</span>
+                <ol>
+                  <li>h1 - h6</li>
+                  <li>strong</li>
+                  <li>em</li>
+                  <li>mark</li>
+                  <li>cite</li>
+                  <li>blockquote</li>
+                  <li>time</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <div><span>Media type tags.</span>
+                <ol>
+                  <li>img</li>
+                  <li>picture</li>
+                  <li>audio</li>
+                  <li>video</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <div><span>Correlation tags.</span>
+                <ol>
+                  <li>ol</li>
+                  <li>ul</li>
+                  <li>figure</li>
+                  <li>figcaption</li>
+                  <li>address</li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+    <section id="slide6" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>Examples</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <ol>
+            <li>HTML Cake!</li>
+            <li>The perfect outline</li>
+            <li>Navigation</li>
+            <li>hr-tag or div?</li>
+          </ol>
+
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+<!-- HTML cake -->
+    <section id="slide7" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>HTML cake!</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <div class="cake-img">
+            <img src="images/html5demo1.jpg" alt="example of a semantic web page layout">
+          </div>
+
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+<!-- The perfect outline -->
+    <section id="slide8" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>The perfect outline</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <div class="cake-img">
+            <img src="images/example-code-outline.jpg" alt="example of a semantic web page outline">
+          </div>
+
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+<!-- Navigation -->
+    <section id="slide9" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>Navigation</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="examples">
+            <code class="good">
+              <div><i class="fas fa-check"></i></div>
+              <pre>
+                &lt;nav class=&quot;main-nav&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Shop&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+              </pre>
+            </code>
+
+            <code class="bad">
+              <div><i class="fas fa-times"></i></div>
+              <pre>
+                &lt;div class=&quot;nav&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+                    &lt;a href=&quot;#&quot;&gt;Shop&lt;/a&gt;
+                    &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+                &lt;/div&gt;
+              </pre>
+            </code>
+          </div>
+          <div>
+            <h3>Where to use a nav element?</h3>
+            <ul class="list">
+              <li>Header</li>
+              <li>Footer or just above the footer</li>
+              <li>Aside for less important links (ex. recently visited)</li>
+              <li>Table of contents</li>
+              <li>Pagination and next/previous buttons</li>
+              <li>Search forms</li>
+              <li>Breadcrumbs</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+<!-- hr or div  -->
+    <section id="slide10" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>hr-tag or div?</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <div class="content-example">
+            <section>
+              <h3>This is a section</h3>
+            </section>
+            <div class="line"></div>
+            <section>
+              <h3>This is another section</h3>
+            </section>
+          </div>
+          <div class="examples">
+            <code class="good">
+              <div><i class="fas fa-check"></i></div>
+              <pre>
+                &lt;section&gt;
+                  &lt;h3&gt;This is a section&lt;/h3&gt;
+                &lt;/section&gt;
+                &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+                &lt;section&gt;
+                  &lt;h3&gt;This is another section&lt;/h3&gt;
+                &lt;/section&gt;
+              </pre>
+            </code>
+
+            <code class="bad">
+              <div><i class="fas fa-times"></i></div>
+              <pre>
+                &lt;div class=&quot;section&quot;&gt;
+                  &lt;h1&gt;This is a section&lt;/h1&gt;
+                &lt;/section&gt;
+                &lt;hr&gt;
+                &lt;div class=&quot;section&quot;&gt;
+                  &lt;h1&gt;This is another section&lt;/h1&gt;
+                &lt;/section&gt;
+              </pre>
+            </code>
+          </div>
+          <div class="content-info">
+            <h3>When to use hr-tag?</h3>
+            <p>The hr-tag represents a thematic break. So you can use is in between sections.</p>
+            <p>However, since the seperator is mostly for styling-purposes only, it doesn't harm to use a div. Using a div also gives you much more styling options.</p>
+          </div>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+<!-- links -->
+    <section id="slide11" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>Links</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <ul class="links">
+            <li class="good">
+              <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png">Semantic flowchart</a>
+              <a href="https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/">Semantic cheat sheet</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements list</a>
+            </li>
+
+            <li class="good">
+              <a href="https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo">Chrome plugin HTML5-outliner</a>
+              <a href="https://validator.w3.org/nu/">W3 validator (new)</a>
+              <a href="https://gsnedders.html5.org/outliner/">html5 outliner</a>
+            </li>
+
+            <li class="good">
+              <a href="http://html5doctor.com/">HTML5doctor</a>
+              <a href="http://html5doctor.com/nav-element/">Semantic navigation</a>
+            </li>
+
+            <li class="good">
+              <a href="https://html.com/semantic-markup/">HTML.com Semantic markkup</a>
+            </li>
+
+            <li class="bad">
+              <a href="http://html5doctor.com/avoiding-common-html5-mistakes/">common HTML5 mistakes</a>
+            </li>
+
+            <li class="bad">
+              <a href="https://www.tipsandtricks-hq.com/10-common-html-mistakes-to-avoid-1980">Top 10 HTML mistakes</a>
+            </li>
+
+            <li class="ugly">
+              <a href="https://www.semrush.com/blog/semantic-html5-guide/">Semantic HTML5 guide</a>
+            </li>
+
+            <li class="ugly">
+              <a href="https://www.smashingmagazine.com/2013/01/the-importance-of-sections/">The importance of sections</a>
+            </li>
+
+            <li class="ugly">
+              <a href="https://css-tricks.com/why-how-and-when-to-use-semantic-html-and-aria/">Why and how and when to use semantic html and aria</a></li>
+            <li class="ugly">
+              <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3Schools</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">MDN Semantics</a>
+              <a href="https://www.w3.org/2002/03/tutorials.html#webdesign_htmlcss">W3.org tutorials & documentation</a>
+            </li>
+
+          </ul>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+    <section id="slide12" class="slide hidden">
+      <div class="flexcenter">
+        <div class="title">
+          <h2>Questions?</h2>
+          <div class="line-wrapper">
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <section>
+          <!-- content goes here -->
+          <i class="fas fa-question"></i>
+        </section>
+      </div>
+    </section> <!-- slide -->
+
+
+  </div> <!-- End container -->
+
+
+  <!-- Javascript for the next/previous buttons -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

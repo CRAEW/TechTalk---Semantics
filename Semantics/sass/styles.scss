@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200&display=swap');
+
+@import 'variables';
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+body {
+  background-color: $body;
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: $mainblack;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: $blueberry;
+    text-decoration: none;
+  }
+
+  button {
+    border:none;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px $kiwi;
+    background-color: $mainblack;
+    color: $mainwhite;
+    font-size: 1.5em;
+    font-weight: 900;
+
+    &:hover {
+      background-color: $kiwi;
+    }
+  }
+}
+
+blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  background-color: $body;
+  padding: 30px;
+  border-radius: 5px;
+
+  p {
+    text-align: right;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.previousslide {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 1000;
+}
+
+.nextslide {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 1000;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide {
+  width: 1000px;
+  height: 750px;
+  background-color: $mainwhite;
+  box-shadow: 0 0 5px $mainblack;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.title {
+  display: inline-block;
+
+
+  h1 {
+    font-size: 8em;
+    font-weight: 900;
+    margin-top: 250px;
+  }
+
+  h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+
+  .line-wrapper {
+    width: 100%;
+    display: flex;
+
+    .line {
+      width: calc(100%/3);
+      height: 10px;
+    }
+
+    .line1 {
+      background-color: $pinklady;
+    }
+    .line2 {
+      background-color: $kiwi;
+    }
+    .line3{
+      background-color: $banaan;
+    }
+  }
+}
+
+#slide2 {
+  h3 {
+    font-size: 3em;
+
+    i:first-child {
+      margin: 0 50px;
+    }
+  }
+}
+
+.line {
+  width: 50%;
+  height: 3px;
+  background-color: $body;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-example {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.content-info {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.good {
+  border: 3px solid $grannysmith;
+}
+
+.bad {
+  border: 3px solid $aardbei;
+}
+
+.ugly {
+  border: 3px solid $mainblack;
+}
+
+.content {
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &>li {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 350px;
+    padding: 30px;
+    background-color: $body;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px #c2c2c2;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    p, div {
+      text-align: center;
+    }
+
+    span {
+      font-weight: 700;
+      margin-top: 30px;
+      display: block;
+    }
+
+    .fas {
+      font-size: 4em;
+    }
+  }
+  }
+
+  ul li ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    li {
+      width: auto;
+      height: 20px;
+      padding: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      background-color: $blueberry;
+      color: $mainwhite;
+      border-radius: 5px;
+    }
+  }
+}
+
+#slide3 {
+  .content ul span {
+        font-size: 1.5em;
+      }
+    }
+
+#slide4 {
+  .content ul span {
+        font-size: 1.5em;
+  }
+}
+
+#slide5 {
+  .content li span {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+#slide6 {
+  ol {
+    list-style-type: decimal;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+}
+
+#slide7 {
+  .cake-img {
+    height: 570px;
+    width: auto;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+#slide9 {
+  nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 400px;
+    background-color: $body;
+
+    li {
+      font-weight: 700;
+      font-size: 1.2em;
+      color: $blueberry;
+      margin: 0;
+      box-shadow: none;
+      background-color: none;
+
+      &:hover {
+        border-bottom: 3px solid $blueberry;
+      }
+    }
+  }
+}
+
+#slide11 {
+  ul.links li {
+    padding: 20px;
+    height: 50px;
+    margin-top: 20px;
+  }
+}
+
+#slide12 {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+  }
+  .fas {
+    font-size: 20em;
+  }
+}
+
+// ctrl+alt+E = escape html
+.examples {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  code {
+    width: 400px;
+    border-radius: 5px;
+    background-color: $body;
+    padding: 10px;
+
+    pre {
+      margin-left: -30px;
+    }
+
+    &.good {
+      border: 3px solid $grannysmith;
+      margin-right: 30px;
+    }
+
+    &.bad {
+      border: 3px solid $aardbei;
+    }
+
+    &.ugly {
+      border: 3px solid $mainblack;
+    }
+
+    div > .fas {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .fas {
+      font-weight: 900;
+      font-size: 4em;
+    }
+    .fa-check {
+      color: $grannysmith;
+    }
+    .fa-times {
+      color: $aardbei;
+    }
+  }
+}
+
+.content ul.list {
+  display: block;
+  text-align: left;
+  list-style-type: circle;
+
+  li {
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    list-style-type: disc;
+    width: 100%;
+  }
+}

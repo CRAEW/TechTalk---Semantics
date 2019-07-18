@@ -1,0 +1,29 @@
+# Semantics
+* kort over ontstaan internet, eerste tags
+  ** cern
+  ** weinig tags
+  ** geen indexering ???
+  ** geen zoekmachines (adres kennen was nodig) ???
+* invention of google/zoekmachines
+  ** meer complexiteit
+  ** moeilijker om iets te vinden, veel meer pages
+  ** indexering werd belangrijker
+
+## Waarom?
+* indexering = betere score zoekmachines -> outline html document
+* overzichtelijk voor andere developers
+* accessability
+
+## outline
+* denk index van een boek of eindwerk
+  ** Titel boek = h1
+  ** hoofstukken h2
+  ** eventueel subtiteltjes in je hoofdstukken met h3-h6
+  ** inhoud = p's, images, links, ...
+* blinde mensen surfen ook op internet!
+
+## Interessante tools
+* HTML5 outliner for google chrome
+* html validator online tool
+* plug-ins for texteditor (outliner)
+* online documentation
